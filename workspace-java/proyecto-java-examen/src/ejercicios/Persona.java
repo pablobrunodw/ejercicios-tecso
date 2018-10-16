@@ -1,0 +1,76 @@
+package ejercicios;
+import java.util.*;
+import java.text.SimpleDateFormat;
+
+public class Persona {
+	TipoDocumento TipoDoc;
+	int NroDocumento;
+	String Nombre;
+	String Apellido;
+	Date FechaNacimiento = new Date();
+	
+	public Persona() {
+	}
+	
+	/* ### Constructor ### */
+	/* ################### */
+	public Persona(TipoDocumento tipoDoc, int nroDocumento, String nombre, String apellido, Date fechaNacimiento) {
+		super();
+		TipoDoc = tipoDoc;
+		NroDocumento = nroDocumento;
+		Nombre = nombre;
+		Apellido = apellido;
+		FechaNacimiento = fechaNacimiento;
+	}
+	
+	/* ### Getters ### */
+	/* ############### */
+	public TipoDocumento getTipoDocumento() {
+		return this.TipoDoc;
+	}
+	
+	public int getNroDocumento() {
+		return this.NroDocumento;
+	}
+	
+	public String getNombre() {
+		return this.Nombre;
+	}
+	
+	public String getApellido() {
+		return this.Apellido;
+	}
+	
+	public Date getFechaNacimiento() {
+		return this.FechaNacimiento;
+	}
+	
+	/* ### Setters ### */
+	/* ############### */
+	public void setTipoDocumento( TipoDocumento tipoDoc ) {
+		this.TipoDoc = tipoDoc;
+	}
+	
+	public void setNroDocumento( int nroDoc) {
+		this.NroDocumento = nroDoc;
+	}
+	
+	public void setNombre( String nombre) {
+		this.Nombre = nombre;
+	}
+	
+	public void setApellido( String apellido ) {
+		this.Apellido = apellido;
+	}
+	
+	public void setFechaNacimiento( Date fechaNac ) {
+		this.FechaNacimiento = fechaNac;
+	}
+	
+	public void imprimir() {
+		SimpleDateFormat fechaNac = new SimpleDateFormat("dd-MM-yyyy");
+        
+		System.out.println("Tipo de Documento: "+TipoDoc+"\nNúmero de Documento: "+NroDocumento+"\nNombre: "+Nombre+"\nApellido: "+Apellido+"\nFecha de Nacimiento: "+fechaNac.format(FechaNacimiento));
+	}
+
+}

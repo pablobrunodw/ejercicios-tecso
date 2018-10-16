@@ -1,0 +1,31 @@
+package ejercicios;
+import java.util.*;
+
+public class Persona {
+	String TipoDoc;
+	int NroDocumento;
+	String Nombre;
+	String Apellido;
+	Date FechaNacimiento = new Date();
+	
+	public Persona() {
+		System.out.println("Por favor, complete todos los datos");
+	}
+	
+	
+	public Persona(TipoDocumento iTipoDoc, int iNroDoc, String iNombre, String iApellido, Date iFechaNac) {
+		
+		switch(iTipoDoc) {
+		case "DNI": TipoDoc = TipoDocumento.DNI; break;
+		case "libretacivica": TipoDoc = TipoDocumento.libretacivica; break;
+		}
+		TipoDocumento.DNI = iTipoDoc;
+		NroDocumento = iNroDoc;
+		Nombre = iNombre;
+		Apellido = iApellido;
+		FechaNacimiento = iFechaNac;
+		
+	}
+
+
+}

@@ -1,0 +1,25 @@
+package ejercicios;
+import java.util.*;
+
+public class Persona {
+	
+	public enum TipoDocumento{
+		DNI,libretacivica
+	}
+	
+	int NroDocumento;
+	String Nombre;
+	String Apellido;
+	Date FechaNacimiento = new Date();
+	
+	public Persona() {
+		System.out.println("Por favor, complete todos los datos");
+	}
+	
+	
+	public Persona(TipoDocumento iTipoDoc, int iNroDoc, String iNombre, String iApellido, Date iFechaNac) {
+		
+	}
+
+
+}

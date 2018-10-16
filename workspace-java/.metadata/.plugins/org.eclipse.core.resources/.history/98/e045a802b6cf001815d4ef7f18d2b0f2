@@ -1,0 +1,20 @@
+package ejercicios;
+
+public class persona {
+	
+	enum TipoDocumento;
+	int NroDocumento;
+	String Nombre;
+	String Apellido;
+	Date FechaNacimiento;
+	
+	
+		public Persona(enum iTipoDoc, int iNroDoc, String iNombre, String iApellido, Date iFechaNac) {
+			
+		}
+
+	public persona() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

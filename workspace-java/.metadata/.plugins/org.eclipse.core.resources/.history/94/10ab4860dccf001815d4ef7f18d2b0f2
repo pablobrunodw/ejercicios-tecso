@@ -1,0 +1,57 @@
+package ejercicios;
+import java.util.*;
+import java.text.SimpleDateFormat;
+import java.text.ParseException;
+/**
+ * A. Crear una clase Persona con los siguientes campos
+ * (con sus respectivos getters, setters y constructor)
+ * 
+ * TipoDocumento - enum (dni/libretacivica) 
+ * NroDocumento - Integer
+ * Nombre - String
+ * Apellido - String
+ * FechaNacimiento - Date
+ * 
+ * B. En el método main de la clase "Ejercicio2" crear una nueva instancia
+ * de la clase persona y settearle valores reales con tus datos
+ * 
+ * 
+ * C. En el método main de la clase "Ejercicio 2" imprimir los valores en 
+ * consola 
+ * (crear método main e imprimir valores) 
+ *  
+ * @author examen
+ *
+ */
+
+public class Ejercicio2 {
+
+	/**
+	 * 
+	 */
+	public Ejercicio2() {
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Date date1 = new Date();
+		TipoDocumento docType = TipoDocumento.DNI;
+		
+		SimpleDateFormat dFecha = new SimpleDateFormat("dd/MM/yyyy");
+        try {
+            fechaNac = dFecha.parse("10/09/1981");
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        
+		Persona pablo = new Persona(docType,28912953,"Pablo","Bruno",fechaNac);
+		System.out.println("Documento tipo: "+pablo.getTipoDocumento());
+		
+		pablo.imprimir();
+
+	}
+
+}

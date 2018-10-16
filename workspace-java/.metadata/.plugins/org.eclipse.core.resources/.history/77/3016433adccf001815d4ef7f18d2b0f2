@@ -1,0 +1,11 @@
+package ejercicios;
+
+public class Alumno {
+	Persona persona = new Persona();
+	int legajo;
+
+	public Alumno() {
+		System.out.println("Por favor complete todos los campos");
+	}
+
+}
