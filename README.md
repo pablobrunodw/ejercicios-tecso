@@ -1,4 +1,5 @@
-## Ejercicios de TESO
+## Ejercicios Resueltos.
 
-Cuenta con 3 carpetas, una con la resolución de las consultas SQL, otra con la resolución de los ejercicios de JAVA 
-y una última con una webapp desarrollada en PHP para el manejo de alumnos en una institución.
+.- Workspace SQL: En el archivo resolución SQL están todos los ejercicios resueltos.
+.- Workspace JAVA: Se resolvieron los ejercicios (desconozco si es la mejor manera de hacerlo puesto que es mi primer contacto con el lenguaje y con eclipse).
+.- Workspace WebApp: Es una versión simplificada de un portal para el manejo de alumnos de una institución.
